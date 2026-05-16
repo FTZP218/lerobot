@@ -24,7 +24,7 @@ conda install ffmpeg -c conda-forge
 >  ```
 >  - _[On Linux only]_ Install [ffmpeg build dependencies](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#GettheDependencies) and [compile ffmpeg from source with libsvtav1](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu#libsvtav1), and make sure you use the corresponding ffmpeg binary to your install with `which ffmpeg`.
 
-Install 🤗 LeRobot:
+Install LeRobot:
 ```bash
 pip install -e .
 ```
@@ -32,12 +32,12 @@ pip install -e .
 > **NOTE:** If you encounter build errors, you may need to install additional dependencies (`cmake`, `build-essential`, and `ffmpeg libs`). On Linux, run:
 `sudo apt-get install cmake build-essential python3-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev`. For other systems, see: [Compiling PyAV](https://pyav.org/docs/develop/overview/installation.html#bring-your-own-ffmpeg)
 
-For simulations, 🤗 LeRobot comes with gymnasium environments that can be installed as extras:
+For simulations, LeRobot comes with gymnasium environments that can be installed as extras:
 - [aloha](https://github.com/huggingface/gym-aloha)
 - [xarm](https://github.com/huggingface/gym-xarm)
 - [pusht](https://github.com/huggingface/gym-pusht)
 
-For instance, to install 🤗 LeRobot with aloha and pusht, use:
+For instance, to install LeRobot with aloha and pusht, use:
 ```bash
 pip install -e ".[aloha, pusht]"
 ```
